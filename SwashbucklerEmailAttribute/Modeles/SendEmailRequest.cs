@@ -3,13 +3,7 @@
 namespace SwashbucklerEmailAttribute.Models
 {
 
-  public interface IIdentifiers
-  {
-    public string[] recipients { get; set; }
-    public string from { get; set; }
-  }
-
-  public class SendEmailRequest : IIdentifiers
+  public class SendEmailRequest
   {
     protected const int MAX_RECIPIENTS = 10000;
 
